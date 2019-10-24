@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #333;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+#controls {
+    width: 600px;
+    margin: auto;
+}
+
+#table {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background-color: #666;
+}
+
+#table>.row {
+    display: block;
+    width: 100%;
+}
+
+#table>.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#table>.row>div {
+    height: 100%;
+    float: left;
+    border: 1px solid #2f2f2f;
+    position: relative;
+}
